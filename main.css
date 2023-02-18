@@ -1,0 +1,121 @@
+* {
+	font-family: 'M PLUS Rounded 1c', sans-serif;
+}
+body {
+	padding: 0px;
+	margin: 0px;
+	font-family: sans-serif;
+	height: 100vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+p {
+	margin: 0px;
+	padding: 0px;
+}
+input {
+	text-transform: uppercase;
+	font-family: 'Roboto', sans-serif;
+	color: #333;
+	font-size: 2rem;
+	text-align: center;
+	padding: 1rem 2rem;
+	border-radius: 2rem 0 0 2rem;
+	border: 2px solid rgba(53, 53, 176, 0.741);
+	width: 100%;
+	display: block;
+	transition: all 0.3s;
+}
+.search-button {
+	width: 140px !important;
+	border-radius: 0 2rem 2rem 0;
+	background-color: rgba(53, 53, 176, 0.741);
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+img {
+	width: 250px;
+}
+.details img {
+	width: 50px;
+}
+.weather-details {
+	display: flex;
+}
+.details {
+	margin-top: 0px;
+	display: flex;
+	flex-wrap: wrap;
+	gap: 10px;
+	justify-content: center;
+	padding: 20px;
+}
+.details div {
+	box-shadow: -6px 10px 5px 1px #0000009c;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	min-height: 100px;
+	min-width: fit-content;
+}
+.details div p {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.detail-block {
+	width: 150px;
+	border-radius: 10px;
+	background-color: rgba(128, 127, 127, 0.547);
+}
+.weather-main {
+	margin-top: 25px;
+	justify-content: center;
+	display: flex;
+	align-items: center;
+	flex-direction: column;
+}
+.weather-description {
+	text-align: center;
+	font-size: xx-large;
+	color: black;
+	font-weight: 700;
+	margin: 20px 0px 0px;
+	text-transform: uppercase;
+}
+.weather-temperature {
+	text-align: center;
+	color: black;
+	font-size: 72px;
+	font-weight: 600;
+	margin-bottom: 25px;
+}
+.city-search {
+	display: flex;
+	justify-content: center;
+}
+.container {
+	transition: height 1s;
+	height: 74px; /*74*/
+	border-radius: 2rem;
+	user-select: none;
+	overflow: hidden;
+	max-width: 600px;
+	width: 100%;
+	margin: auto;
+	background: #3a5c899d;
+	color: #ffffff;
+}
+
+.weather-error {
+	color: red;
+	font-size: xx-large;
+	font-weight: bold;
+	display: none;
+}
+
+@media screen and (min-width: 600) {
+}

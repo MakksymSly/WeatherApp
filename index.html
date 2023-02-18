@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="stylesheet" href="main.css" />
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c&display=swap" rel="stylesheet">
+		<title>Weather finder</title>
+	</head>
+	<body>
+		<div class="container" id="container">
+			<div class="city-search">
+				<input type="text" placeholder="city name" id="cityName" />
+				<button class="search-button" id="search-button"><p style="font-size: 28px; text-transform: uppercase">Show</p></button>
+			</div>
+			<div class="weather-main" >
+				<div id="weather-main">
+					<div class="weather-temperature" id="temperature"><sup style="font-size: 25px">&#8451;</sup></div>
+						<div class="weather-image">
+							<img src="assets/img/storm.png" id="weather-image" draggable="false" />
+					</div>
+					<div class="weather-description" id="weather-description">Stormy</div>
+				</div>
+				<div class="weather-error" id="weather-error">
+					<div>Oops invalid city</div>
+						<div class="weather-image">
+							<img src="assets/img/not-found.png" draggable="false" />
+						</div>
+				</div>
+			<div class="weather-details">
+				<div class="details" id="details">
+					<div class="details-pressure detail-block">
+						<img src="assets/img/pressure.png" draggable="false" />
+						<p id="pressure"></p>
+						<p>Pressure</p>
+					</div>
+					<div class="details-pressure detail-block">
+						<img src="assets/img/wind.png" draggable="false" />
+						<p id="wind"></p>
+						<p>wind</p>
+					</div>
+					<div class="details-pressure detail-block">
+						<img src="assets/img/sunrise.png" draggable="false" />
+						<p id="sunrise"></p>
+						<p>sunrise</p>
+					</div>
+					<div class="details-pressure detail-block">
+						<img src="assets/img/humidity.png" draggable="false" />
+						<p id="humidity"></p>
+						<p>humidity</p>
+					</div>
+					<div class="details-pressure detail-block">
+						<img src="assets/img/visibility.png" draggable="false" />
+						<p id="visibility"></p>
+						<p>visibility</p>
+					</div>
+					<div class="details-pressure detail-block">
+						<img src="assets/img/sunset.png" draggable="false" />
+						<p id="sunset"></p>
+						<p>sunset</p>
+					</div>
+				</div>
+			</div>
+		</div>
+		<script src="main.js"></script>
+	</body>
+</html>
